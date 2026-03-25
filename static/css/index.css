@@ -224,8 +224,22 @@ body {
 }
 
 .author-block {
-  display: inline-block;
-  margin-right: 0.5rem;
+  display: block;
+  margin-right: 0;
+}
+
+.publication-affiliations {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.35rem 1.5rem;
+  margin-top: 0.9rem;
+  line-height: 1.45;
+  color: var(--text-secondary);
+}
+
+.affiliation-item {
+  white-space: nowrap;
 }
 
 .publication-links {
@@ -724,6 +738,14 @@ code {
   
   .publication-authors {
     font-size: 1rem !important;
+  }
+
+  .publication-affiliations {
+    gap: 0.35rem 1rem;
+  }
+
+  .affiliation-item {
+    white-space: normal;
   }
   
   .button {
