@@ -230,12 +230,19 @@ body {
 
 .publication-affiliations {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 0.35rem 1.5rem;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.35rem;
   margin-top: 0.9rem;
   line-height: 1.45;
   color: var(--text-secondary);
+}
+
+.affiliation-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.35rem 1.5rem;
 }
 
 .affiliation-item {
@@ -741,6 +748,10 @@ code {
   }
 
   .publication-affiliations {
+    gap: 0.35rem 0;
+  }
+
+  .affiliation-row {
     gap: 0.35rem 1rem;
   }
 
