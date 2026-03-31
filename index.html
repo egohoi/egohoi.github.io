@@ -341,9 +341,9 @@
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body has-text-centered">
-      <figure class="image">
-        <img src="static/egohoi/teaser10.jpg" alt="Teaser image" loading="lazy" style="border-radius:12px;">
-      </figure>
+      <video autoplay muted loop controls preload="metadata" playsinline style="width:100%; border-radius:12px; box-shadow: var(--shadow-xl);">
+        <source src="static/videos/egohoi_promo_draft_v28.mp4" type="video/mp4">
+      </video>
       <p class="teaser-caption">Qualitative comparison between a baseline world model and EgoHOI. Both methods start from the same first frame and are not given privileged future object states. The baseline relies on text-only guidance, while EgoHOI integrates physics-informed embeddings distilled from 3D estimates into the generative rollout process. As a result, EgoHOI better preserves ego-motion consistency, kinematic fidelity, and object integrity under viewpoint changes, producing more physically plausible and contact-consistent hand-object interactions over time.</p>
     </div>
   </div>
